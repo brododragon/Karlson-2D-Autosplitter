@@ -154,7 +154,7 @@ split
 isLoading
 {
     print(vars.kills.Current.ToString() + vars.requiredKills.Current.ToString());
-    return(vars.paused.Current || vars.dead.Current || vars.kills.Current == vars.requiredKills.Current || !vars.started.Current);
+    return(vars.dead.Current || vars.kills.Current == vars.requiredKills.Current || !vars.started.Current);
 }
 
 reset
